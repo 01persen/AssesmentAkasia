@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test Akasia</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/_animations.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Silahkan Pilih salah satu:</h2>
+          <ul>
+          <li>
+            <input type="radio" id="n-option" name="selector" onclick="showalert('.Net');">
+            <label for="n-option">.Net</label>
+            
+            <div class="check"></div>
+          </li>
+          
+          <li>
+            <input type="radio" id="s-option" name="selector" onclick="showalert('Javascript');">
+            <label for="s-option">Javascript</label>
+            
+            <div class="check"><div class="inside"></div></div>
+          </li>
+          
+          <li>
+            <input type="radio" id="t-option" name="selector" onclick="showalert('Java');">
+            <label for="t-option">Java</label>
+            
+            <div class="check"><div class="inside"></div></div>
+          </li>
+
+          <li>
+            <input type="radio" id="k-option" name="selector" onclick="showalert('Kotlin');">
+            <label for="k-option">Kotlin</label>
+            
+            <div class="check"><div class="inside"></div></div>
+          </li>
+
+          <li>
+            <input type="radio" id="f-option" name="selector" onclick="showalert('Flutter');">
+            <label for="f-option">Flutter</label>
+            
+            <div class="check"><div class="inside"></div></div>
+          </li>
+        </ul>
+        </div>
+
+        <script src="js/swal.js"></script>
+        <script>
+            function showalert(text){
+              Swal.fire({
+                title: text,
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
+            }
+        </script>
+    </body>
+</html>
